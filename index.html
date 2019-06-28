@@ -78,14 +78,28 @@
 
       .titulo {
         font-family: lobster;
-        margin: 30px 0px 30px 0px ;
+        margin: 30px 0px 0px 0px ;
+        
 
 
       }
 
-      .cardheader2 {
+      .verde2 {
         background-color: #7BC556;
+      }
 
+      .azul2 {
+        background-color: #3f98eb;
+        color: #3f98eb; 
+      }
+
+      .azul2g{
+        background: rgb(63,152,235);
+        background: linear-gradient(90deg, rgba(63,152,235,1) 0%, rgba(113,175,232,1) 56%, rgba(33,182,213,1) 81%);
+      }
+
+      .red2 {
+        background-color: #FC4444;
       }
 
       .gradiente {
@@ -192,7 +206,8 @@
     </div>
 
     <div> <!-- camara em Numeros -->
-      <h2 class="display-4 titulo" > Nossa Câmara em números</h2> 
+      <h2 class="display-4 titulo" > Produtividade</h2> 
+      <p class="tmont mb-5"> Nossa câmara em números </p>
       <div class="row" style="height: 500px; ">
         <section class="col border bg-light" >
          
@@ -210,7 +225,7 @@
     </div>
 
     <div class=> <!-- Quatro CARDs -->
-      <h2 class="display-4 titulo mb-0" > Serviços </h2> 
+      <h2 class="display-4 titulo" > Serviços </h2> 
       <p class="tmont mb-5"> Do que voce precisa?</p>
       <section class="d-flex justify-content-between">
 
@@ -227,7 +242,7 @@
           </div>
 
           <div class="card shadow " style="width: 260px; height:350px;">
-            <h2 class="card-header pl-3 bg-warning text-light d-block pl-2 pt-2 pb-2">Participe</h2>
+            <h2 class="card-header pl-3 azul2 text-light d-block pl-2 pt-2 pb-2">Participe</h2>
             <div class="card-body"> 
               <div class="card-text topens pt-4"> 
                 <a href=""><h5>Camara em Movimento</h5></a>
@@ -240,20 +255,20 @@
           </div>
 
           <div class="card shadow " style="width: 260px;height: 350px;">
-            <h2 class="card-header pl-3 bg-warning text-light d-block pl-2 pt-2 pb-2"> Questione </h2>
+            <h2 class="card-header pl-3  text-light d-block pl-2 pt-2 pb-2 verde2"> Questione </h2>
             <div class="card-body">
               <div class="card-text topens pt-4"> 
                 <a href=""><h5>Ouvidoria</h5></a>
                 <a href="http://www.cl.df.gov.br/web/guest/telefones1" target="_blank"> <h5>Telefones</h5> </a>
-                <a href=""><h5></h5></a>
-                <a href=""><h5></h5></a>
+                <a href="http://www.cl.df.gov.br/web/guest/corregedoria" target="_blank"><h5> Corregedoria</h5></a>
+                <a href="http://www.cl.df.gov.br/web/guest/procuradoria-especial-da-mulher"><h5> Procuradoria da Mulher</h5></a>
                
               </div>
             </div>
           </div>
 
           <div class="card shadow " style="width: 260px; height: 350px;">
-            <h2 class="card-header pl-3  bg-warning text-light d-block pl-2 pt-2 pb-2">Fiscalize </h2>
+            <h2 class="card-header pl-3  text-light d-block pl-2 pt-2 pb-2 red2">Fiscalize </h2>
             <div class="card-body">
               <div class="card-text topens pt-4"> 
                 <a href=""> <h5>Dados Abertos</h5> </a>
@@ -269,12 +284,15 @@
       </section>
      
     </div>
+ 
 
-    <div> <!-- Nossos representantes -->
-      <h2 class="display-4 titulo">  Nosso Representantes </h2>
-      <p class="text-danger"> cmo fazer o que voce quer http://dadosabertos.cl.df.gov.br/View/verbas.html </p>
+
+  <div> <!-- Nossos representantes -->
+
+      <h2 class="display-4 titulo">  Nossos Representantes </h2>
+      <p class="tmont mb-5"> Parlamentares eleitos e colegiados </p>
       <div class="card ">
-        <div class="card-header cardheader2">
+        <div class="card-header verde2" style="border: none;">
           <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
               <a class="nav-link active" href="#deputados"> Deputados </a>
@@ -297,6 +315,7 @@
           <h5 class="card-title"> Legislatura Eleita em 2018 </h5>
           <div class="card-text"> 
             <div class="container bg-"> <!-- fotos de deputados -->
+
               <div class="row  pt-5">
                   <div class="col"> 
                     <img src="img/jl.jpg" alt="..." class="border border-success rounded-circle rounded shadow" width="200" height="200"center >
@@ -339,21 +358,19 @@
                   </div>
               </div>
 
-            </div>
+            </div> <!-- fim das fotos -->
 
-          </div>
-
-
-
-          </p>
-          
+          </div> <!-- fim do card text -->
         </div>
       </div>
-    </div>
+  </div>
+
 
     <div class="mb-5"> <!-- Conhecer -->
       
       <h2 class="display-4 titulo">  Conheça e Entenda </h2>
+      <p class="tmont mb-5"> Saiba como funciona a nossa casa legislativa</p>
+
 
       <div class="rol d-flex">
         <div class="col-4" >
@@ -363,7 +380,7 @@
               </li>
 
               <li class="nav-item">        
-                <a class="nav-link" href="#oquefaz" data-toggle="pill" role="tab" > O que faz um deputado? </a> 
+                <a class="nav-link " href="#oquefaz" data-toggle="pill" role="tab" > O que faz um deputado? </a> 
               </li>
 
               <li class="nav-item">        
@@ -380,23 +397,23 @@
 
         <div class="col-8 tab-content" id="tabconteudo" >
           <div class="card tab-pane fade show active" id="oquee" role="tabpanel" style="height: 400px;">
-            <h2 class="card-header" style="font-family: Abril Fatface;"> A Câmara Legislativa do DF </h2>
+            <h2 class="card-header azul2 text-white" > A Câmara Legislativa do DF </h2>
             <p class="card-body topens"> Como o DF absorve as funções de Estado e de Município, sua Casa Legislativa atua como um misto de Assembleia estadual e Câmara Municipal. Vinte e quatro deputados distritais, eleitos de quatro em quatro anos, compõem a Câmara Legislativa. Esse número é determinado pelo artigo 27 da Constituição Federal e corresponde ao triplo do número de deputados federais do DF. Este site não é oficial As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. </p>
           </div>
 
           <div class="card tab-pane" id="oquefaz" role="tabpanel" style="height: 400px;">
-            <h2 class="card-header"> O que faz </h2>
-            <p class="card-body"> Como o DF absorve as funções de Estado e de Município, sua Casa Legislativa atua como um misto de Assembleia estadual e Câmara Municipal. Vinte e quatro deputados distritais, eleitos de quatro em quatro anos, compõem a Câmara Legislativa. Esse número é determinado pelo artigo 27 da Constituição Federal e corresponde ao triplo do número de deputados federais do DF. Este site não é oficial As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. </p>
+            <h2 class="card-header azul2 text-white"> O que faz </h2>
+            <p class="card-body topens" > Como o DF absorve as funções de Estado e de Município, sua Casa Legislativa atua como um misto de Assembleia estadual e Câmara Municipal. Vinte e quatro deputados distritais, eleitos de quatro em quatro anos, compõem a Câmara Legislativa. Esse número é determinado pelo artigo 27 da Constituição Federal e corresponde ao triplo do número de deputados federais do DF. Este site não é oficial As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. </p>
           </div>
 
           <div class="card tab-pane" id="eleito" role="tabpanel" style="height: 400px;">
-            <h2 class="card-header"> Eleição dos deputados distritais  </h2>
-            <p class="card-body">  Como o DF absorve as funções de Estado e de Município, sua Casa Legislativa atua como um misto de Assembleia estadual e Câmara Municipal. Vinte e quatro deputados distritais, eleitos de quatro em quatro anos, compõem a Câmara Legislativa. Esse número é determinado pelo artigo 27 da Constituição Federal e corresponde ao triplo do número de deputados federais do DF. Este site não é oficial As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. </p>
+            <h2 class="card-header azul2 text-white"> Eleição dos deputados distritais  </h2>
+            <p class="card-body topens">  Como o DF absorve as funções de Estado e de Município, sua Casa Legislativa atua como um misto de Assembleia estadual e Câmara Municipal. Vinte e quatro deputados distritais, eleitos de quatro em quatro anos, compõem a Câmara Legislativa. Esse número é determinado pelo artigo 27 da Constituição Federal e corresponde ao triplo do número de deputados federais do DF. Este site não é oficial As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. </p>
           </div>
 
           <div class="card tab-pane" id="ganha" role="tabpanel" style="height: 400px;">
-            <h2 class="card-header"> Salários, vantagens e benefícios </h2>
-            <p class="card-body"> Como o DF absorve as funções de Estado e de Município, sua Casa Legislativa atua como um misto de Assembleia estadual e Câmara Municipal. Vinte e quatro deputados distritais, eleitos de quatro em quatro anos, compõem a Câmara Legislativa. Esse número é determinado pelo artigo 27 da Constituição Federal e corresponde ao triplo do número de deputados federais do DF. Este site não é oficial As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. </p>
+            <h2 class="card-header azul2 text-white"> Salários, vantagens e benefícios </h2>
+            <p class="card-body topens"> Como o DF absorve as funções de Estado e de Município, sua Casa Legislativa atua como um misto de Assembleia estadual e Câmara Municipal. Vinte e quatro deputados distritais, eleitos de quatro em quatro anos, compõem a Câmara Legislativa. Esse número é determinado pelo artigo 27 da Constituição Federal e corresponde ao triplo do número de deputados federais do DF. Este site não é oficial As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. </p>
           </div>
 
         </div>
@@ -410,25 +427,6 @@
 
       </div>
     </div>
-
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-      </li>
-    </ul>
-
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> veja vbem meu bem</div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> desse fatos vis </div>
-      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"> somos no papel</div>
-    </div>
-
   
   </div> <!--fim da Container-->
 
