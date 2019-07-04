@@ -36,6 +36,8 @@
       a, a:visited {text-decoration: none; color: black ;}
       a:hover,a:focus {text-decoration: none; color: #f0ad4e;}
 
+      .painel .nav-item .nav-link a:hover {color: white;}, a {color:red;}, a:focus {color: red;}
+
       h5 {padding-top: 10px;}
 
       
@@ -133,49 +135,53 @@
 
     
 <!-- NAVEGAÇÃO --> 
-  <nav class="fixed-top">
-    <div>       
-      <ul class="nav nav-end bg-warning text-dark" style="padding: 10px 150px 10px 150px; background-color: rgba(75,129,80,0.9); : " >
+  <nav class="fixed-top bg-warning text-dark">
+    <div class="container border border-primary">
+      <div class="row mt-3 mb-3 d-flex">
 
-        <a href="index.html" class="nav-brand" style="text-decoration: none; color: white;"> 
-          <h3> CLDF Fácil</h3> 
-        </a>
+        <div class="col-md-2 col-sm-12 border">
+          <a class="nav-brand d-inline " href="index.html"  style="text-decoration: none; color: white;"> 
+            <h3> CLDF Fácil</h3> 
+          </a>
 
-        <li class="nav-item ml-auto">
-         <a href="#bloco2" class="nav-link text-light text-large textmg"> Números </a> </li>
+          <button class="navbar-toggler d-none d-sm-block d-md-none d-inline" type="button" data-toggle="collapse" data-target="#nav-content"> 
+            <i class="fas fa-bars text-light bg-primary" style="padding: 8px;"></i>
+          </button>
+        </div>
 
-        <li>
-        <a href="#bloco4" class="nav-link text-light textmg"> Serviços </a> </li>
+      
+        <ul class="nav nav-end col-md-8 d-none d-md-block  border border-success"   id="nav-content">
+          <li class="nav-item ml-auto">
+           <a href="#bloco2" class="nav-link text-light text-large textmg"> Produtividade </a> </li>
 
-        <li>
-        <a href="#bloco5" class="nav-link text-light textmg"> Representantes </a> </li>
+          <li>
+          <a href="#bloco4" class="nav-link text-light textmg"> Serviços </a> </li>
 
-        <li>
-        <a href="#bloco6" class="nav-link text-light textmg"> Conheça  </a> </li>
+          <li>
+          <a href="#bloco5" class="nav-link text-light textmg"> Representantes </a> </li>
 
-        <li>
-        <a href="deputados.html" class="nav-link text-light textmg"> Sobre </a> </li>
+          <li>
+          <a href="#bloco6" class="nav-link text-light textmg"> Conheça  </a> </li>
 
+          <li>
+          <a href="deputados.html" class="nav-link text-light textmg"> Sobre </a> </li>
 
+        </ul>
 
-        <li>
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="buscar por..." aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
+        <form class="col-md-2  col-sm-12  border border-secondary d-sm-none d-md-inline form-inline navbar-search">
+          <div class="input-group">
+            <input type="text" class="form-control bg-light border-0 small" placeholder="buscar por..." aria-label="Search" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button">
+                <i class="fas fa-search fa-sm"></i>
+              </button>
             </div>
-          </form>
-         </li>
+          </div>
+        </form> 
 
 
-
-
-      </ul>
-    </div>
+      </div>
+    </div>    
   </nav>    
       
 
@@ -194,8 +200,8 @@
           As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. 
           </p>
 
-          <a href="http://www.cl.df.gov.br/" target="_blank" class="btn btn-warning text-light"> Ir para site oficial</a>
-          <a href="" class="btn btn-warning text-light">Curti! vou ficar</a>
+          <a href="http://www.cl.df.gov.br/" target="_blank" class="btn btn-warning btn-lg text-light"> Ir para site oficial</a>
+          <a href="" class="btn btn-warning text-light btn-lg">Curti! vou ficar</a>
 
         </div>
 
@@ -208,172 +214,245 @@
     <div> <!-- camara em Numeros -->
       <h2 class="display-4 titulo" > Produtividade</h2> 
       <p class="tmont mb-5"> Nossa câmara em números </p>
-      <div class="row" style="height: 500px; ">
-        <section class="col border bg-light" >
-         
-        </section>
+  
 
-        <section class="col border bg-light">
-          <canvas id="myChart" width="400" height="400"> teste </canvas>
+     
+      <div class="row" style="height: 500px;">
+          
+          <section class="col-md-5 col-sm-12 border ml-5">
+            <h3 class="gradiente text-white d-inline pr-5"> Produção Legislativa </h3>
+            <img src="img/gf1.png" width="450px"> 
+          </section>
+        
 
-
-
-
-        </section>
+          <section class="col-md-5 col-sm-12 border ml-5 "> 
+           <h3 class="gradiente text-white d-inline pr-5"> Gastos </h3>
+           <img src="img/gf2.png" width="450px"> 
+          </section>
+          
 
       </div> <!-- fim da ROW -->
     </div>
 
-    <div class=> <!-- Quatro CARDs -->
+
+    <div> <!-- Quatro CARDs -->
       <h2 class="display-4 titulo" > Serviços </h2> 
-      <p class="tmont mb-5"> Do que voce precisa?</p>
-      <section class="d-flex justify-content-between">
+      <p class="tmont mb-3"> Do que voce precisa?</p>
+      <section class="row mt-1">
 
-          <div class="card shadow " style="width: 260px; height: 350px;">
-            <h2 class="card-header bg-warning pl-3 text-light d-block pl-2 pt-2 pb-2"> Acompanhe</h2>
-            <div class="card-body"> 
-              <div class="card-text topens pt-4"> 
-                <a href=""><h5> Tv Legislativa </h5></a>
-                <a href=""><h5> Ordem do dia</h5></a>
-                <a href=""><h5> Notícias Oficiais </h5></a>
-                <a href="https://www.google.com/search?q=cldf&rlz=1C1GCEU_pt-brBR821BR825&source=lnms&tbm=nws&sa=X&ved=0ahUKEwjogu6n5YrjAhWgF7kGHeb3Au4Q_AUIECgB&biw=1455&bih=688" target="_blank"> <h5> Notícias Gerais</h5></a>
+          <div class="col-md-3 col-sm-12 mt-3"  >
+            <div class="card shadow" style="height: 350px;">
+              <h2 class="card-header bg-warning pl-3 text-light d-block pl-2 pt-2 pb-2"> Acompanhe</h2>
+              <div class="card-body"> 
+                <div class="card-text topens pt-4"> 
+                  <a href=""><h5> Tv Legislativa </h5></a>
+                  <a href=""><h5> Ordem do dia</h5></a>
+                  <a href=""><h5> Notícias Oficiais </h5></a>
+                  <a href="https://www.google.com/search?q=cldf&rlz=1C1GCEU_pt-brBR821BR825&source=lnms&tbm=nws&sa=X&ved=0ahUKEwjogu6n5YrjAhWgF7kGHeb3Au4Q_AUIECgB&biw=1455&bih=688" target="_blank"> <h5> Notícias Gerais</h5></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="card shadow " style="width: 260px; height:350px;">
-            <h2 class="card-header pl-3 azul2 text-light d-block pl-2 pt-2 pb-2">Participe</h2>
-            <div class="card-body"> 
-              <div class="card-text topens pt-4"> 
-                <a href=""><h5>Camara em Movimento</h5></a>
-                <a href=""><h5>e-Democracia</h5></a>
-                <a href=""><h5>Labhinova</h5></a>
-                <a href=""><h5>Audiências Pública</h5></a>
-            
-              </div>
-            </div> 
+          <div class="col-md-3 col-sm-12 mt-3">
+            <div class="card shadow" style="height: 350px;" >
+              <h2 class="card-header pl-3 azul2 text-light d-block pl-2 pt-2 pb-2">Participe</h2>
+              <div class="card-body"> 
+                <div class="card-text topens pt-4"> 
+                  <a href=""><h5>Câmara em Movimento</h5></a>
+                  <a href=""><h5>e-Democracia</h5></a>
+                  <a href=""><h5>Labhinova</h5></a>
+                  <a href=""><h5>Audiências Pública</h5></a>
+              
+                </div>
+              </div> 
+            </div>
           </div>
 
-          <div class="card shadow " style="width: 260px;height: 350px;">
-            <h2 class="card-header pl-3  text-light d-block pl-2 pt-2 pb-2 verde2"> Questione </h2>
-            <div class="card-body">
-              <div class="card-text topens pt-4"> 
-                <a href=""><h5>Ouvidoria</h5></a>
-                <a href="http://www.cl.df.gov.br/web/guest/telefones1" target="_blank"> <h5>Telefones</h5> </a>
-                <a href="http://www.cl.df.gov.br/web/guest/corregedoria" target="_blank"><h5> Corregedoria</h5></a>
-                <a href="http://www.cl.df.gov.br/web/guest/procuradoria-especial-da-mulher"><h5> Procuradoria da Mulher</h5></a>
-               
+
+          <div class="col-md-3 col-sm-12 mt-3">
+            <div class="card shadow" style="height: 350px;">
+              <h2 class="card-header pl-3  text-light d-block pl-2 pt-2 pb-2 verde2"> Questione </h2>
+              <div class="card-body">
+                <div class="card-text topens pt-4"> 
+                  <a href=""><h5>Ouvidoria</h5></a>
+                  <a href="http://www.cl.df.gov.br/web/guest/telefones1" target="_blank"> <h5>Telefones</h5> </a>
+                  <a href="http://www.cl.df.gov.br/web/guest/corregedoria" target="_blank"><h5> Corregedoria</h5></a>
+                  <a href="http://www.cl.df.gov.br/web/guest/procuradoria-especial-da-mulher"><h5> Procuradoria da Mulher</h5></a>
+                 
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="card shadow " style="width: 260px; height: 350px;">
-            <h2 class="card-header pl-3  text-light d-block pl-2 pt-2 pb-2 red2">Fiscalize </h2>
-            <div class="card-body">
-              <div class="card-text topens pt-4"> 
-                <a href=""> <h5>Dados Abertos</h5> </a>
-                <a href=""> <h5>Verba Indenizatorias</h5></a>
-                <a href=""> <h5>Emendas Parlamentares</h5></a>
-                <a href=""> <h5>Publicidade</h5></a>
-                <a href=""> <h5>Licitações e contratos</h5></a>
-              </div>  
-            
-
-            </div>          
+          <div class="col-md-3 col-sm-12 mt-3">
+            <div class="card shadow" style="height: 350px;" >
+              <h2 class="card-header pl-3 text-light d-block pl-2 pt-2 pb-2 red2">Fiscalize </h2>
+              <div class="card-body">
+                <div class="card-text topens pt-4"> 
+                  <a href=""> <h5>Dados Abertos</h5> </a>
+                  <a href=""> <h5>Verba Indenizatorias</h5></a>
+                  <a href=""> <h5>Emendas </h5></a>
+                  <a href=""> <h5>Publicidade</h5></a>
+                  <a href=""> <h5>Licitações e contratos</h5></a>
+                </div>  
+              </div>          
+            </div>
           </div>
       </section>
      
-    </div>
+    </div> <!-- fim do Qautro cards -->
+
+  </div> <!-- fim do container -->
  
 
 
-  <div> <!-- Nossos representantes -->
+  <div class="bg-light pb-5"> <!-- Nossos representantes -->
+    <div class="container">
 
-      <h2 class="display-4 titulo">  Nossos Representantes </h2>
+      <h2 class="display-4 titulo"> Representantes </h2>
       <p class="tmont mb-5"> Parlamentares eleitos e colegiados </p>
-      <div class="card ">
+
+      <div class="card painel shadow">
         <div class="card-header verde2" style="border: none;">
-          <ul class="nav nav-tabs card-header-tabs">
+          <ul class="nav nav-tabs card-header-tabs" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" href="#deputados"> Deputados </a>
+              <a class="nav-link active lead" href="#deputados" data-toggle="pill" role="tab" aria-controls="pills-home" aria-selected="true"> Deputados </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white" href="#comiss"> Comissões</a>
+              <a class="nav-link lead text-white" href="#comis" data-toggle="pill" role="tab" aria-controls="pills-home" aria-selected="true"> Comissões</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white" href="#"> Frentes Parlamentares </a>
+              <a class="nav-link text-white lead" href="#"> Frentes Parlamentares </a>
             </li>
-
      
           </ul>
 
         </div>
 
-        <div class="card-body" id="deputados">
-          <h5 class="card-title"> Legislatura Eleita em 2018 </h5>
-          <div class="card-text"> 
-            <div class="container bg-"> <!-- fotos de deputados -->
 
-              <div class="row  pt-5">
-                  <div class="col"> 
-                    <img src="img/jl.jpg" alt="..." class="border border-success rounded-circle rounded shadow" width="200" height="200"center >
+        <div class="tab-content" id="conteudodeputados">
+          <div class="card-body tab-pane fade show active" role="tabpanel" id="deputados">
+            <h5 class="card-title"> Legislatura Eleita em 2018 </h5>
+            <div class="card-text"> 
+              <div class="container bg-"> <!-- fotos de deputados -->
 
-                    <h5> Julia Lucy <span> <b></b> NOVO</span></h5>
-                    <a href="#" class="btn btn-outline-success"> Conversar! </a>
-                    <a href="#" class="btn btn-success"> Redes Sociais </a>
+                <div class="row pt-5">
+                    <div class="col"> 
+                      <img src="img/deputados/1.png" alt="..." class="border border-success rounded-circle rounded shadow" width="200" height="200" >
 
-                  </div>
+                      <h5> Julia Lucy <span> <b></b> NOVO</span></h5>
+                      <a href="#" class="btn btn-outline-success"> Conversar! </a>
+                      <a href="#" class="btn btn-success"> Redes Sociais </a>
 
-                  <div class="col" > 
-                    <img src="https://source.unsplash.com/random/200x200" alt="..." class="border border-success  rounded-circle " style="width: 200px;"> <p align="center"> Teste</p>
-                  </div>
+                    </div>
 
-                  <div class="col"> 
-                    <img src="https://source.unsplash.com/random/200x200" alt="..." class="border border-success rounded-circle " style="width: 200px;">
-                  </div>
+                    <div class="col" > 
+                      <img src="https://source.unsplash.com/random/200x200" alt="..." class="border border-success  rounded-circle " style="width: 200px;"> <p align="center"> Teste</p>
+                    </div>
 
-                  <div class="col"> 
-                    <img src="https://source.unsplash.com/random/200x200" alt="..." class="border border-success rounded-circle " style="width: 200px;">
-                  </div>
-              </div>
+                    <div class="col"> 
+                      <img src="https://source.unsplash.com/random/200x200" alt="..." class="border border-success rounded-circle " style="width: 200px;">
+                    </div>
 
-              <div class="row">
-                  <div class="col" > 
-                    <img src="img/apoios/1.jpg" alt="..." class="border border-success rounded-circle rounded " style="width: 200px;">
+                    <div class="col"> 
+                      <img src="https://source.unsplash.com/random/200x200" alt="..." class="border border-success rounded-circle " style="width: 200px;">
+                    </div>
+                </div>
 
-                  </div>
+                <div class="row">
+                    <div class="col" > 
+                      <img src="img/apoios/1.jpg" alt="..." class="border border-success rounded-circle rounded " style="width: 200px;">
 
-                  <div class="col" > 
-                    <img src="img/apoios/2.png" alt="..." class="border border-success  rounded-circle " style="width: 200px;"> <p align="center"> Teste</p>
-                  </div>
+                    </div>
 
-                  <div class="col"> 
-                    <img src="img/apoios/3.png" alt="..." class="border border-success rounded-circle " style="width: 200px;">
-                  </div>
+                    <div class="col" > 
+                      <img src="img/apoios/2.png" alt="..." class="border border-success  rounded-circle " style="width: 200px;"> <p align="center"> Teste</p>
+                    </div>
 
-                  <div class="col"> 
-                    <img src="img/apoios/4.jpg" alt="..." class="border border-success rounded-circle " style="width: 200px;">
-                  </div>
-              </div>
+                    <div class="col"> 
+                      <img src="img/apoios/3.png" alt="..." class="border border-success rounded-circle " style="width: 200px;">
+                    </div>
 
-            </div> <!-- fim das fotos -->
+                    <div class="col"> 
+                      <img src="img/apoios/4.jpg" alt="..." class="border border-success rounded-circle " style="width: 200px;">
+                    </div>
+                </div>
 
-          </div> <!-- fim do card text -->
+              </div> <!-- fim das fotos -->
+
+            </div> <!-- fim do card text -->
+          </div>
+
+          <div class="card-body tab-pane fade show " role="tabpanel" id="comis">
+            <h5 class="card-title">  </h5>
+            <div class="card-text"> 
+              <div class="container bg-"> <!-- fotos de deputados -->
+
+                <div class="row  pt-5">
+                    <div class="col"> 
+                      <img src="img/deputados/jl.jpg" alt="..." class="border border-success rounded-circle rounded shadow" width="200" height="200"center >
+
+                      <h5> Julia Lucy <span> <b></b> NOVO</span></h5>
+                      <a href="#" class="btn btn-outline-success"> Conversar! </a>
+                      <a href="#" class="btn btn-success"> Redes Sociais </a>
+
+                    </div>
+
+                    <div class="col" > 
+                      <img src="" alt="..." class="border border-success  rounded-circle " style="width: 200px;"> <p align="center"> Teste</p>
+                    </div>
+
+                    <div class="col"> 
+                      <img src="https://source.unsplash.com/random/200x200" alt="..." class="border border-success rounded-circle " style="width: 200px;">
+                    </div>
+
+                    <div class="col"> 
+                      <img src="https://source.unsplash.com/random/200x200" alt="..." class="border border-success rounded-circle " style="width: 200px;">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" > 
+                      <img src="img/apoios/1.jpg" alt="..." class="border border-success rounded-circle rounded " style="width: 200px;">
+
+                    </div>
+
+                    <div class="col" > 
+                      <img src="img/apoios/2.png" alt="..." class="border border-success  rounded-circle " style="width: 200px;"> <p align="center"> Teste</p>
+                    </div>
+
+                    <div class="col"> 
+                      <img src="img/apoios/3.png" alt="..." class="border border-success rounded-circle " style="width: 200px;">
+                    </div>
+
+                    <div class="col"> 
+                      <img src="img/apoios/4.jpg" alt="..." class="border border-success rounded-circle " style="width: 200px;">
+                    </div>
+                </div>
+
+              </div> <!-- fim das fotos -->
+
+            </div> <!-- fim do card text -->
+          </div>
+ 
         </div>
+
       </div>
-  </div>
+    </div>
+  </div> <!-- fim do 2 container -->
 
-
-    <div class="mb-5"> <!-- Conhecer -->
+  <div><!-- Conhecer -->
+    <div class="mb-5 container" > 
       
       <h2 class="display-4 titulo">  Conheça e Entenda </h2>
       <p class="tmont mb-5"> Saiba como funciona a nossa casa legislativa</p>
 
 
       <div class="rol d-flex">
-        <div class="col-4" >
+        <div class="col-md-4 col-sm-12" >
           <ul class="nav flex-column nav-pills mb-3" id="detalhes" role="tablist">
               <li class="nav-item">        
                 <a class="nav-link active" href="#oquee" data-toggle="pill" role="tab" aria-controls="pills-home" aria-selected="true"> O que é a Câmara Legislativa?</a> 
@@ -395,7 +474,7 @@
 
         </div>
 
-        <div class="col-8 tab-content" id="tabconteudo" >
+        <div class="col-md-8  col-sm-12 tab-content" id="tabconteudo" >
           <div class="card tab-pane fade show active" id="oquee" role="tabpanel" style="height: 400px;">
             <h2 class="card-header azul2 text-white" > A Câmara Legislativa do DF </h2>
             <p class="card-body topens"> Como o DF absorve as funções de Estado e de Município, sua Casa Legislativa atua como um misto de Assembleia estadual e Câmara Municipal. Vinte e quatro deputados distritais, eleitos de quatro em quatro anos, compõem a Câmara Legislativa. Esse número é determinado pelo artigo 27 da Constituição Federal e corresponde ao triplo do número de deputados federais do DF. Este site não é oficial As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. </p>
@@ -427,6 +506,7 @@
 
       </div>
     </div>
+  </div> <!-- fim do 3 container -->
   
   </div> <!--fim da Container-->
 
