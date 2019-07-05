@@ -108,9 +108,17 @@
         background: #7BC556;
         background: linear-gradient(to right, #7CCD7C, );
       }
+
       .jumbotron{
         padding-top: 20px;
         padding-bottom: 20px;}
+
+
+      .central {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
 
     </style>
       
@@ -125,21 +133,14 @@
 
 
 
-<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-        <p> Onde estou? VAI SER MODAL! falar que esse site nao é oficial é somente uma tentativa da sociedade civil de faciliar o acesso as informações tendo em vista que osite oficial é muito ruim </p>
-    </div>
-  </div>
-</div>
 
     
 <!-- NAVEGAÇÃO --> 
-  <nav class="fixed-top bg-warning text-dark">
+ <!--<nav class="fixed-top bg-warning text-dark">
     <div class="container border border-primary">
-      <div class="row mt-3 mb-3 d-flex">
+      <div class="row mt-2 mb-2 d-flex">
 
-        <div class="col-md-2 col-sm-12 border">
+        <div class="col-md-2  col-sm-12 border">
           <a class="nav-brand d-inline " href="index.html"  style="text-decoration: none; color: white;"> 
             <h3> CLDF Fácil</h3> 
           </a>
@@ -150,7 +151,7 @@
         </div>
 
       
-        <ul class="nav nav-end col-md-8 "   id="nav-content">
+        <ul class="nav nav-end col-md-10 "   id="nav-content">
           <li class="nav-item ml-auto">
            <a href="#bloco2" class="nav-link text-light text-large textmg"> Produtividade </a> </li>
 
@@ -166,31 +167,84 @@
           <li>
           <a href="deputados.html" class="nav-link text-light textmg"> Sobre </a> </li>
 
+          <form class="navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="buscar por..." aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-md"></i>
+                </button>
+              </div>
+            </div>
+          </form> 
+
+
         </ul>
 
-        <form class="col-md-2 col-sm-12 d-sm-none d-md-block navbar-search">
-          <div class="input-group">
-            <input type="text" class="form-control bg-light border-0 small" placeholder="buscar por..." aria-label="Search" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-primary" type="button">
-                <i class="fas fa-search fa-md"></i>
-              </button>
-            </div>
-          </div>
-        </form> 
+
 
 
       </div>
     </div>    
-  </nav>    
-      
+  </nav>  -->
 
+
+      
+  <nav class="navbar navbar-expand-sm fixed-top bg-warning text-dark">
+
+    <div class="container" >   
+      <a class="nav-brand" href="index.html"  style="text-decoration: none; color: white;"> 
+        <h3> CLDF Fácil</h3> 
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content"> 
+        <i class="fas fa-bars text-light bg-primary" style="padding: 8px;"> </i> 
+      </button>
+
+       
+      <div class="collapse navbar-collapse" id="nav-content">
+        <ul class="navbar-nav ml-auto" >
+
+          <li class="nav-item">
+           <a href="#bloco2" class="nav-link text-light text-large textmg"> Produtividade </a> </li>
+
+          <li>
+          <a href="#bloco4" class="nav-link text-light textmg"> Serviços </a> </li>
+
+          <li>
+          <a href="#bloco5" class="nav-link text-light textmg"> Representantes </a> </li>
+
+          <li>
+          <a href="#bloco6" class="nav-link text-light textmg"> Conheça  </a> </li>
+
+          <li>
+          <a href="deputados.html" class="nav-link text-light textmg"> Sobre </a> </li>
+
+
+            <form class="navbar-search">
+              <div class="input-group">
+                <input type="text" class="form-control bg-light border-0 small" placeholder="buscar por..." aria-label="Search" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fas fa-search fa-md"></i>
+                  </button>
+                </div>
+              </div>
+          </form> 
+
+
+        </ul>
+      
+      </div>
+   
+    </div> <!-- container -->   
+  </nav>    
 
 
   <div class="container" style="margin-top: 120px; " >
 
     <div> <!-- Jumbotron -->
-      <div class="jumbotron shadow-lg gradiente">
+      <div class="jumbotron shadow-lg gradiente" id="topo">
         <div class="container text-center pb-0 ">      
 
           <h2 class="display-4 text-white mb-5"> A Câmara Legislativa  <br> de cara nova </h2>
@@ -201,7 +255,8 @@
           </p>
 
           <a href="http://www.cl.df.gov.br/" target="_blank" class="btn btn-warning btn-lg text-light"> Ir para site oficial</a>
-          <a href="" class="btn btn-warning text-light btn-lg">Curti! vou ficar</a>
+
+          <a href="" class="btn btn-warning text-light btn-lg mt-2">Curti! vou ficar</a>
 
         </div>
 
@@ -214,21 +269,19 @@
     <div> <!-- camara em Numeros -->
       <h2 class="display-4 titulo" > Produtividade</h2> 
       <p class="tmont mb-5"> Nossa câmara em números </p>
-  
-
-     
+      
       <div class="row" style="height: 500px;">
           
-          <section class="col-md-5 col-sm-12 border ml-5">
+          <div class="col-md-5 col-sm-12 border ml-5">
             <h3 class="gradiente text-white d-inline pr-5"> Produção Legislativa </h3>
             <img src="img/gf1.png" width="450px"> 
-          </section>
+          </div>
         
 
-          <section class="col-md-5 col-sm-12 border ml-5 "> 
+          <div class="col-md-5 col-sm-12 border ml-5 mt-3"> 
            <h3 class="gradiente text-white d-inline pr-5"> Gastos </h3>
            <img src="img/gf2.png" width="450px"> 
-          </section>
+          </div>
           
 
       </div> <!-- fim da ROW -->
@@ -300,7 +353,6 @@
             </div>
           </div>
       </section>
-     
     </div> <!-- fim do Qautro cards -->
 
   </div> <!-- fim do container -->
@@ -309,7 +361,6 @@
 
   <div class="bg-light pb-5"> <!-- Nossos representantes -->
     <div class="container">
-
       <h2 class="display-4 titulo"> Representantes </h2>
       <p class="tmont mb-5"> Parlamentares eleitos e colegiados </p>
 
@@ -329,119 +380,348 @@
             </li>
      
           </ul>
-
         </div>
 
 
-        <div class="tab-content" id="conteudodeputados">
+        <div class="tab-content" id="representantes">
           <div class="card-body tab-pane fade show active" role="tabpanel" id="deputados">
             <h5 class="card-title"> Legislatura Eleita em 2018 </h5>
             <div class="card-text"> 
-              <div class="container bg-"> <!-- fotos de deputados -->
+              <div class="container"> <!-- fotos de deputados -->
 
                 <div class="row pt-5">
-                    <div class="col"> 
-                      <img src="img/deputados/1.png" alt="..." class="border border-success rounded-circle rounded shadow" width="200" height="200" >
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/1.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
 
-                      <h5> Julia Lucy <span> <b></b> NOVO</span></h5>
-                      <a href="#" class="btn btn-outline-success"> Conversar! </a>
-                      <a href="#" class="btn btn-success"> Redes Sociais </a>
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
 
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
                     </div>
 
-                    <div class="col" > 
-                      <img src="https://source.unsplash.com/random/200x200" alt="..." class="border border-success  rounded-circle " style="width: 200px;"> <p align="center"> Teste</p>
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/2.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
+
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
                     </div>
 
-                    <div class="col"> 
-                      <img src="https://source.unsplash.com/random/200x200" alt="..." class="border border-success rounded-circle " style="width: 200px;">
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/3.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
+
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
                     </div>
 
-                    <div class="col"> 
-                      <img src="https://source.unsplash.com/random/200x200" alt="..." class="border border-success rounded-circle " style="width: 200px;">
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/4.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
+
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col" > 
-                      <img src="img/apoios/1.jpg" alt="..." class="border border-success rounded-circle rounded " style="width: 200px;">
+                <div class="row pt-5"> <!-- sefunda fileira -->
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/5.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
 
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
                     </div>
 
-                    <div class="col" > 
-                      <img src="img/apoios/2.png" alt="..." class="border border-success  rounded-circle " style="width: 200px;"> <p align="center"> Teste</p>
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/6.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
+
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
                     </div>
 
-                    <div class="col"> 
-                      <img src="img/apoios/3.png" alt="..." class="border border-success rounded-circle " style="width: 200px;">
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/7.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
+
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
                     </div>
 
-                    <div class="col"> 
-                      <img src="img/apoios/4.jpg" alt="..." class="border border-success rounded-circle " style="width: 200px;">
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/8.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
+
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
                     </div>
                 </div>
 
-              </div> <!-- fim das fotos -->
+                <div class="row pt-5">
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/9.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
 
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
+                    </div>
+
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/10.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
+
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
+                    </div>
+
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/11.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
+
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
+                    </div>
+
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/12.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
+
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
+                    </div>
+                </div>
+
+                <div class="row pt-5">
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/13.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
+
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
+                    </div>
+
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/14.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
+
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
+                    </div>
+
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/15.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
+
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
+                    </div>
+
+                    <div class="col-md-3 col-sm-6  text-center">
+                      <div class="border border-success rounded-circle rounded shadow central" style="background-color: rgb(138,138,138); background-image: url(img/deputados/16.png); background-position: center; background-repeat: no-repeat; width: 200px; height: 200px;">  
+
+                      </div>
+                         
+                      <h5> Agaciel Maia <span class="badge badge-info">  PR </span> </h5>
+
+                      <button class="btn btn-sm btn-outline-success dropup" data-toggle="dropdown"> Contatos </button>
+                      <div class="dropdown-menu" id="dp1">
+                        <a href="#" class="dropdown-item"> Conversar </a>
+                        <a href="#" class="dropdown-item"> Redes Sociais </a>
+                        <a href="#" class="dropdown-item"> Email </a>
+                      </div>
+
+             
+                    </div>
+                </div>
+
+
+
+              </div> <!-- fim container das fotos -->
             </div> <!-- fim do card text -->
           </div>
 
-          <div class="card-body tab-pane fade show " role="tabpanel" id="comis">
-            <h5 class="card-title">  </h5>
+          <div class="card-body tab-pane fade show" role="tabpanel" id="comis">
+            <h5 class="card-title">  Comissões </h5>
             <div class="card-text"> 
-              <div class="container bg-"> <!-- fotos de deputados -->
+              <div class="container bg"> <!-- comissões da casa  -->
+                <table class="table">
+                  <thead class="text-center">
+                    <th> Permanentes </th>
+                    <th> Temporarias </th>
+                  </thead>
 
-                <div class="row  pt-5">
-                    <div class="col"> 
-                      <img src="img/deputados/jl.jpg" alt="..." class="border border-success rounded-circle rounded shadow" width="200" height="200"center >
+                  <tbody>
+                    <tr>
+                       <td> CCJ - Comissão de Constituição e Justiça </td>
+                       <td> CEOF - Comissão de Economia Orçamento e Finanças </td>
 
-                      <h5> Julia Lucy <span> <b></b> NOVO</span></h5>
-                      <a href="#" class="btn btn-outline-success"> Conversar! </a>
-                      <a href="#" class="btn btn-success"> Redes Sociais </a>
+                    </tr>
+                  
+                    
 
-                    </div>
+                  </tbody>
+                  
 
-                    <div class="col" > 
-                      <img src="" alt="..." class="border border-success  rounded-circle " style="width: 200px;"> <p align="center"> Teste</p>
-                    </div>
 
-                    <div class="col"> 
-                      <img src="https://source.unsplash.com/random/200x200" alt="..." class="border border-success rounded-circle " style="width: 200px;">
-                    </div>
+                </table>
 
-                    <div class="col"> 
-                      <img src="https://source.unsplash.com/random/200x200" alt="..." class="border border-success rounded-circle " style="width: 200px;">
-                    </div>
-                </div>
+                  
+               
 
-                <div class="row">
-                    <div class="col" > 
-                      <img src="img/apoios/1.jpg" alt="..." class="border border-success rounded-circle rounded " style="width: 200px;">
-
-                    </div>
-
-                    <div class="col" > 
-                      <img src="img/apoios/2.png" alt="..." class="border border-success  rounded-circle " style="width: 200px;"> <p align="center"> Teste</p>
-                    </div>
-
-                    <div class="col"> 
-                      <img src="img/apoios/3.png" alt="..." class="border border-success rounded-circle " style="width: 200px;">
-                    </div>
-
-                    <div class="col"> 
-                      <img src="img/apoios/4.jpg" alt="..." class="border border-success rounded-circle " style="width: 200px;">
-                    </div>
-                </div>
+          
+       
 
               </div> <!-- fim das fotos -->
 
             </div> <!-- fim do card text -->
           </div>
+        </div>
+
  
         </div>
 
-      </div>
-    </div>
+    </div> <!-- fim do container interno -->
+  </div> <!-- Fim da Seção NOSSOS REPRESENTATES-->
+
   </div> <!-- fim do 2 container -->
 
   <div><!-- Conhecer -->
@@ -521,15 +801,31 @@
 
   </body>
 
-  <footer style="background-color: #f6c23e;">
-    <section class=" container  ">
-      <h3 class="text-white"> Todas as opções do Site Oficial </h3>
-      <p>
-        ..
-      </p>
+  <footer class="bg-dark">
+    <section class="container">
+      <div class="row pt-3">
+        <div class="col">
+          <h3 class="text-light"> Produzido por  </h3>
+          <p>
+           
+          </p>
+        </div>
 
-        <button href="" class="btn btn-danger btn-lg"> Acessar o site oficial ! </button>   
-    </section>
+        <div class="col">
+           <button href="#topo" class="btn btn-outline-warning btn-lg text-light"> Voltar ao topo </button>   
+
+          <button href="" class="btn btn-outline-warning btn-lg text-light"> Acessar o site oficial ! </button>   
+        </div>
+
+        
+
+      </div>
+      <div class="pt-3"> 
+
+      </div>
+      
+
+
     
 
   </footer>
