@@ -36,7 +36,13 @@
       a, a:visited {text-decoration: none; color: black ;}
       a:hover,a:focus {text-decoration: none; color: #f0ad4e;}
 
-      .painel .nav-item .nav-link a:hover {color: white;}, a {color:red;}, a:focus {color: red;}
+      
+
+
+
+     
+
+
 
       h5 {padding-top: 10px;}
 
@@ -198,7 +204,7 @@
       </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content"> 
-        <i class="fas fa-bars text-light bg-primary" style="padding: 8px;"> </i> 
+        <i class="fas fa-bars text-light bg-dark" style="padding: 8px;"> </i> 
       </button>
 
        
@@ -243,52 +249,50 @@
 
   <div class="container" style="margin-top: 120px; " >
 
-    <div> <!-- Jumbotron -->
-      <div class="jumbotron shadow-lg gradiente" id="topo">
-        <div class="container text-center pb-0 ">      
 
-          <h2 class="display-4 text-white mb-5"> A Câmara Legislativa  <br> de cara nova </h2>
-          <p class="text-white" > Devido à pessima qualidade do site da Cãmara Legislativa 
-            Como o DF absorve as funções de Estado e de Município, sua Casa Legislativa atua como um misto de Assembleia estadual e Câmara Municipal. Vinte e quatro deputados distritais, eleitos de quatro em quatro anos, compõem a Câmara Legislativa. Esse número é determinado pelo artigo 27 da Constituição Federal e corresponde ao triplo do número de deputados federais do DF. <span> <b>Este site não é oficial</b></span> 
+	<div class="jumbotron shadow-lg gradiente" id="topo"><!-- Jumbotron -->
+		<div class="container text-center pb-0 ">      
 
-          As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. 
-          </p>
+		  <h2 class="display-4 text-white mb-5"> A Câmara Legislativa  <br> de cara nova </h2>
+		  <p class="text-white" > Devido à pessima qualidade do site da Cãmara Legislativa 
+		    Como o DF absorve as funções de Estado e de Município, sua Casa Legislativa atua como um misto de Assembleia estadual e Câmara Municipal. Vinte e quatro deputados distritais, eleitos de quatro em quatro anos, compõem a Câmara Legislativa. Esse número é determinado pelo artigo 27 da Constituição Federal e corresponde ao triplo do número de deputados federais do DF. <span> <b>Este site não é oficial</b></span> 
 
-          <a href="http://www.cl.df.gov.br/" target="_blank" class="btn btn-warning btn-lg text-light"> Ir para site oficial</a>
+		  As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. 
+		  </p>
 
-          <a href="" class="btn btn-warning text-light btn-lg mt-2">Curti! vou ficar</a>
+		  <a href="http://www.cl.df.gov.br/" target="_blank" class="btn btn-warning btn-lg text-light"> Ir para site oficial</a>
 
-        </div>
+		  <a href="" class="btn btn-warning text-light btn-lg mt-2">Curti! vou ficar</a>
 
-        
+		</div>    
+	</div><!-- fim do Jumbotrom -->
 
-      </div>
-      
-    </div>
 
-    <div> <!-- camara em Numeros -->
+    	
+	<div> <!-- Camara em Numeros -->
       <h2 class="display-4 titulo" > Produtividade</h2> 
       <p class="tmont mb-5"> Nossa câmara em números </p>
-      
-      <div class="row" style="height: 500px;">
+	      
+	      <div class="row" style="height: 500px;">
+	          
+	          <div class="col-md-5 col-sm-12 border ml-5">
+		            <h3 class="gradiente text-white d-inline pr-5"> Produção Legislativa </h3>
+		            <img src="img/gf1.png" width="450px"> 
+	          </div>
+	        
+
+	          <div class="col-md-5 col-sm-12 border ml-5 mt-3"> 
+		           <h3 class="gradiente text-white d-inline pr-5"> Gastos </h3>
+		           <img src="img/gf2.png" width="450px"> 
+	          </div>
           
-          <div class="col-md-5 col-sm-12 border ml-5">
-            <h3 class="gradiente text-white d-inline pr-5"> Produção Legislativa </h3>
-            <img src="img/gf1.png" width="450px"> 
-          </div>
-        
-
-          <div class="col-md-5 col-sm-12 border ml-5 mt-3"> 
-           <h3 class="gradiente text-white d-inline pr-5"> Gastos </h3>
-           <img src="img/gf2.png" width="450px"> 
-          </div>
-          
-
-      </div> <!-- fim da ROW -->
-    </div>
+	      </div> <!-- fim da ROW -->
+	</div>
+</div> <!-- fim do container -->
 
 
-    <div> <!-- Quatro CARDs -->
+ <div style="background-image: url(img/bg.png);"> 
+ 	<div class="container"><!-- Quatro CARDs -->
       <h2 class="display-4 titulo" > Serviços </h2> 
       <p class="tmont mb-3"> Do que voce precisa?</p>
       <section class="row mt-1">
@@ -352,10 +356,11 @@
               </div>          
             </div>
           </div>
+
       </section>
     </div> <!-- fim do Qautro cards -->
 
-  </div> <!-- fim do container -->
+ </div> <!-- fim do container -->
  
 
 
@@ -728,9 +733,71 @@
     <div class="mb-5 container" > 
       
       <h2 class="display-4 titulo">  Conheça e Entenda </h2>
-      <p class="tmont mb-5"> Saiba como funciona a nossa casa legislativa</p>
+      <p class="tmont mb-5"> Saiba como funciona a nossa casa legislativa</p> 
+
+      <div class="accordion conhecer" id="conhece">
+      	<div class="card">
+      		<div class="card-header azul2 text-white">
+      			<h5> <a class="btn btn-link linklimpo topens" type="button" data-toggle="collapse" data-target="#oquee"> O que é a Câmara Legislativa? </a> </h5>   
+      		</div>
+
+      		<div id="oquee" class="collapse show">
+      			<div class="card-body">
+      			<h4 class="text-primary" > A Câmara Legislativa do DF </h4>
+           		<p class="mt-3"> Como o DF absorve as funções de Estado e de Município, sua Casa Legislativa atua como um misto de Assembleia estadual e Câmara Municipal. Vinte e quatro deputados distritais, eleitos de quatro em quatro anos, compõem a Câmara Legislativa. Esse número é determinado pelo artigo 27 da Constituição Federal e corresponde ao triplo do número de deputados federais do DF. Este site não é oficial As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. </p>
+			       
+			    </div>
+      			
+      		</div>
+
+      		<div class="card-header azul2 text-white">
+      			<h5> <a class="btn btn-link linklimpo topens" type="button" data-toggle="collapse" data-target="#oquefaz"> O que faz um deputado? </a> </h5>   
+      		</div>
+
+      		<div id="oquefaz" class="collapse ">
+      			<div class="card-body">
+      			<h4 class="" > As funções </h4>
+           		<p class="mt-3"> Como o DF absorve as funções de Estado e de Município, sua Casa Legislativa atua como um misto de Assembleia estadual e Câmara Municipal. Vinte e quatro deputados distritais, eleitos de quatro em quatro anos, compõem a Câmara Legislativa. Esse número é determinado pelo artigo 27 da Constituição Federal e corresponde ao triplo do número de deputados federais do DF. Este site não é oficial As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. </p>
+			       
+			    </div>
+      			
+      		</div>
+
+      		<div class="card-header azul2 text-white">
+      			<h5> <a class="btn btn-link linklimpo topens" type="button" data-toggle="collapse" data-target="#eleitos"> Como são eleitos os deputados? </a> </h5>   
+      		</div>
+
+      		<div id="eleitos" class="collapse ">
+      			<div class="card-body">
+      			<h4 class="" > Eleições distritais </h4>
+           		<p class="mt-3"> Como o DF absorve as funções de Estado e de Município, sua Casa Legislativa atua como um misto de Assembleia estadual e Câmara Municipal. Vinte e quatro deputados distritais, eleitos de quatro em quatro anos, compõem a Câmara Legislativa. Esse número é determinado pelo artigo 27 da Constituição Federal e corresponde ao triplo do número de deputados federais do DF. Este site não é oficial As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. </p>
+			       
+			    </div>
+      			
+      		</div>
+
+      		<div class="card-header azul2 text-white">
+      			<h5> <a class="btn btn-link linklimpo topens" type="button" data-toggle="collapse" data-target="#beneficios"> Quanto ganha um deputado? </a> </h5>   
+      		</div>
+
+      		<div id="beneficios" class="collapse ">
+      			<div class="card-body">
+      			<h4 class="" >  Salários, vantagens e benefícios </h4>
+           		<p class="mt-3"> Como o DF absorve as funções de Estado e de Município, sua Casa Legislativa atua como um misto de Assembleia estadual e Câmara Municipal. Vinte e quatro deputados distritais, eleitos de quatro em quatro anos, compõem a Câmara Legislativa. Esse número é determinado pelo artigo 27 da Constituição Federal e corresponde ao triplo do número de deputados federais do DF. Este site não é oficial As sessões ocorrem ordinariamente de 1º de fevereiro a 30 de junho e de 1º de agosto a 15 de dezembro e, extraordinariamente, nos casos previstos na Lei Orgânica. </p>
+			       
+			    </div>
+      			
+      		</div>      		      		
 
 
+
+      		
+      	</div>
+      	
+      </div>
+
+
+      <!--  Solução com cards 
       <div class="rol d-flex">
         <div class="col-md-4 col-sm-12" >
           <ul class="nav flex-column nav-pills mb-3" id="detalhes" role="tablist">
@@ -776,6 +843,8 @@
           </div>
 
         </div>
+
+         Fim da solução com cards -->
         
       </div> <!-- FIM DA ROW -->
 
