@@ -26,7 +26,7 @@
 
     <style type="text/css">
 
-      a, a:visited {text-decoration: none; color: white;}
+      a, a:visited {text-decoration: none; ;}
       a:hover,a:focus {text-decoration: none; color: ;}
 
       h5 {padding-top: 10px;}
@@ -116,7 +116,6 @@
         margin-right: auto;
       }
       
-
     </style>
       
 
@@ -129,7 +128,7 @@
 
   <div class="gradiente"  style="height:50px">
       <div class="container">
-        <h4 class="text-white text-right pt-2"> Observatório Social de Brasília </h4>
+        <h4 class="text-white text-right pt-2" id="topo"> Observatório Social de Brasília </h4>
       </div> 
 
   </div>
@@ -141,7 +140,7 @@
   		<div class="container text-center pb-0 ">      
 
   		  <h2 class="display-4 text-white mb-5"> Compromissos do Governador</h2>
-  		  <p class="text-white" >  O Observatório Social de Brasília convidou todos os candidatos a governador do   Distrito Federal nas eleições de 2018 a assinar uma carta com 13 compromissos relacionados   à qualidade na gestão pública, à transparência e ao controle social.  As medidas propostas na carta visam a garantir o amplo acesso a informações  públicas, ampliar a prestação de contas pelo governo, efetivar regras para ocupação de cargos públicos e melhorar o atendimento ao cidadão nos serviços públicos, entre outros pontos. Assinaram o documento os candidatos Alexandre Guerra, Rodrigo Rollemberg, Júlio Miragaya e Ibaneis Rocha, este eleito no segundo turno, com 69,79% dos votos válidos. Passados os seis primeiros meses do novo governo, o Observatório apresenta à população do DF a primeira avaliação do cumprimento dos compromissos firmados pelo governador. 
+  		  <p class="text-white" >  O Observatório Social de Brasília convidou todos os candidatos a governador do   Distrito Federal nas eleições de 2018 a assinar uma carta com 13 compromissos relacionados   à qualidade na gestão pública, à transparência e ao controle social.  As medidas propostas na carta visam a garantir o amplo acesso a informações  públicas, ampliar a prestação de contas pelo governo, efetivar regras para ocupação de cargos públicos e melhorar o atendimento ao cidadão nos serviços públicos, entre outros pontos. Assinaram o documento os candidatos Alexandre Guerra, Rodrigo Rollemberg, Júlio Miragaya e Ibaneis Rocha, este eleito no segundo turno, com 69,79% dos votos válidos. Passados os seis primeiros meses do novo governo, apresentamos à população do DF a primeira avaliação do cumprimento dos compromissos firmados pelo governador. 
         </p>
   		  
 
@@ -149,11 +148,11 @@
   	</div><!-- fim do Jumbotrom --> 
 
     <div class="text-center" id="botoes">
-        <a href="" target="_blank" class="btn btn-outline-success text-success btn-lg"> A carta </a>
+        <a href="https://drive.google.com/file/d/1G2H3r_uxuuxYjYuq8d4CT0nU2zqCDZys/view?usp=sharing" target="_blank" class="btn btn-outline-success text-success btn-lg"> A carta </a>
         <a href="#geral" class="btn btn-outline-success text-success btn-lg "> Avaliação Geral </a>    
-        <a href="" class="btn btn-outline-success text-success btn-lg "> Os compromissos</a>    
-        <a href="" class="btn btn-outline-success text-success btn-lg "> Relatório Completo</a>
-        <a href="#conhece" class="btn btn-outline-success text-success btn-lg "> Realização </a>
+        <a href="#detalhes" class="btn btn-outline-success text-success btn-lg "> Os compromissos</a>    
+        <a href="https://drive.google.com/open?id=1eS5SI04Pt2tRAQ7HS45YYshRkGx6D-q0" target="_blank" class="btn btn-outline-success text-success btn-lg "> Relatório Completo</a>
+        <a href="#realizacao" class="btn btn-outline-success text-success btn-lg "> Realização </a>
     </div>
 
     	
@@ -181,21 +180,27 @@
    	</div>
 
     <div class="row justify-content-around mb-3">
-      <div class="col-5  border-success rounded shadow" style="height: 300px;"> 
+      <div class="col-5  border-success rounded shadow" style="height: 300px;">
+        <div class="text-center" style="font-size: 50px;">
+          <i class="fas fa-hourglass-end text-success"> </i>
+        </div> 
+         
         <h2 class="text-center text-success">Prazo</h2>
-        <p>
-          A presente avaliação foi realziada em..
-          pretende se repetial em 
+        <p class="pt-4">
+          A presente avaliação foi realizada em Agosto de 2019, passados seis meses do novo governo. Avaliação será revisada periodicamente e o intuito do Observatório é contribuir para o desenvolvimento de uma cultura democrática de fiscalização cidadã das promessas de campanha do atual e dos futuros governos<span id="detalhes"></span>.
 
         </p>
 
       </div>
 
       <div class="col-5 shadow rounded" style="height: 300px;">
+        <div class="text-center" style="font-size: 50px;">
+          <i class="fas fa-tasks text-success"></i>
+        </div> 
+        
         <h2 class="text-center text-success ">Método</h2>
-        <p>
-          A presente avaliação foi realziada em..
-          pretende se repetial em 
+        <p class="pt-4">
+          Além da análise de sites governamentais e de fatos notórios, foram feitos pedidos de informações pelo Sistema Eletrônico do Serviço de Informações ao Cidadão (e-SIC), diretamente aos órgãos responsáveis, bem como enviado ofício ao governador. 
           
         </p>
       </div>
@@ -210,7 +215,7 @@
 
  	<div class="container mb-3">
       <h1 class="display-5 titulo" >Os Compromissos </h1> 
-      <p class="tmont mb-4"> Confira em detalhes os compromissos assumidos e os resultados avaliados </p>
+      <p class="tmont mb-4" > Confira em detalhes os compromissos assumidos e os resultados avaliados </p>
 
    
     <div class="col-md-12 col-sm-12 mt-3"> 
@@ -230,10 +235,9 @@
 
               <div id="cp1" class="panel-collapse collapse">
                   <div class="card-body shadow"> 
-                    <p> Publicar em página única na internet todos os editais, chamamentos públicos e informações sobre
-licitações, dispensas, inexigibilidades e contratações da administração pública distrital, direta e indireta, com acesso aos documentos produzidos nos respectivos processos.</p>
-                    <button class=" btn btn-outline-info"> Detalhes </button>
-                    <button class=" btn btn-outline-info"> Saiba mais </button>
+                    <p> <span class="text-muted"> COMPROMISSO 1: </span> Publicar em página única na internet todos os editais, chamamentos públicos e informações sobre licitações, dispensas, inexigibilidades e contratações da administração pública distrital, direta e indireta, com acesso aos documentos produzidos nos respectivos processos.</p>
+                    <button class=" btn btn-outline-info" data-toggle="modal" data-target="#modalcp1"> Detalhes </button>
+                    
                   </div> 
               </div>
           </div>
@@ -251,13 +255,9 @@ licitações, dispensas, inexigibilidades e contratações da administração p�
 
               <div id="cp2" class="card-collapse collapse">
                   <div class="card-body shadow"> 
-                    <p> Desenvolver plataformas tecnológicas e
-páginas na internet que permitam ao cidadão o
-acompanhamento da execução dos Planos Distritais de
-Saúde, Educação e demais áreas, com indicação do
-cumprimento ou não das metas estabelecidas.</p>
+                    <p> <span class="text-muted"> COMPROMISSO 2: </span> Desenvolver plataformas tecnológicas e páginas na internet que permitam ao cidadão o acompanhamento da execução dos  planos Distritais de Saúde, Educação e demais áreas, com indicação do cumprimento ou não das metas estabelecidas.</p>
                     <button class=" btn btn-outline-info"> Detalhes </button>
-                    <button class=" btn btn-outline-info"> Saiba mais </button>
+                    
                   </div> 
               </div>
           </div>
@@ -275,13 +275,9 @@ cumprimento ou não das metas estabelecidas.</p>
 
               <div id="cp3" class="card-collapse collapse">
                   <div class="card-body shadow"> 
-                    <p> Orientar e treinar os agentes públicos
-responsáveis pelo tratamento dos pedidos de acesso à
-informação amparados na Lei de Acesso à Informação para a
-importância de atender as solicitações e aplicar as sanções
-legais em caso de negativa ou demora injustificadas.</p>
+                    <p> <span class="text-muted"> COMPROMISSO 3: </span> Orientar e treinar os agentes públicos responsáveis pelo tratamento dos pedidos de acesso à informação amparados na Lei de Acesso à Informação para a importância de atender as solicitações e aplicar as sanções legais em caso de negativa ou demora injustificadas.</p>
                     <button class="btn btn-outline-info"> Detalhes </button>
-                    <button class=" btn btn-outline-info"> Saiba mais </button>
+                    
                   </div> 
               </div>
           </div>
@@ -299,11 +295,9 @@ legais em caso de negativa ou demora injustificadas.</p>
 
               <div id="cp4" class="card-collapse collapse">
                   <div class="card-body shadow"> 
-                    <p> Publicar relatório mensal de apurações de
-descumprimento da LAI e aplicação das sanções previstas na
-lei.</p>
+                    <p> <span class="text-muted"> COMPROMISSO 4: </span> Publicar relatório mensal de apurações de descumprimento da LAI e aplicação das sanções previstas na lei.</p>
                     <button class="btn btn-outline-info"> Detalhes </button>
-                    <button class=" btn btn-outline-info"> Saiba mais </button>
+                    
                   </div> 
               </div>
           </div>
@@ -314,20 +308,16 @@ lei.</p>
               <div class="panel-heading ">
                  <h5 class="card-header red2 shadow ">
                   <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp5">
-                  Ocupar 50% dos cargos em comissão com servidores efetivos, conforme a lei.
+                  Ocupar 50% dos cargos em comissão com servidores efetivos, conforme a lei
                   </a>
                  </h5> 
               </div> 
 
               <div id="cp5" class="card-collapse collapse">
                   <div class="card-body shadow"> 
-                    <p> COMPROMISSO 5: Determinar que todos os órgãos e
-entidades públicas do GDF cumpram, individualmente, até a
-metade do mandato (dois anos), o requisito da Lei nº
-4.858/2012 de que 50% dos cargos em comissão sejam
-ocupados por servidores efetivos..</p>
+                    <p> <span class="text-muted"> COMPROMISSO 5: </span> Determinar que todos os órgãos e entidades públicas do GDF cumpram, individualmente, até a metade do mandato (dois anos), o requisito da Lei nº 4.858/2012 de que 50% dos cargos em comissão sejam ocupados por servidores efetivos..</p>
                     <button class="btn btn-outline-info"> Detalhes </button>
-                    <button class=" btn btn-outline-info"> Saiba mais </button>
+               
                   </div> 
               </div>
           </div>
@@ -338,7 +328,7 @@ ocupados por servidores efetivos..</p>
               <div class="panel-heading ">
                  <h5 class="card-header red2 shadow ">
                   <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp6">
-                  Treinar servidores para melhor cumprimento da Lei de Acesso à Informação
+                  Anexação e a divulgação de currículo para a ocupação de cargos em comissão
                   </a>
                  </h5> 
               </div> 
@@ -348,7 +338,7 @@ ocupados por servidores efetivos..</p>
                     <p> <span class="text-muted"> COMPROMISSO 6: </span>
                     Exigir, para provimento de cargos em comissão, a anexação e a divulgação de currículo contendo informações sobre formação acadêmica e experiência profissional que justifiquem a capacitação para o exercício do cargo.</p>
                     <button class="btn btn-outline-info"> Detalhes </button>
-                    <button class=" btn btn-outline-info"> Saiba mais </button>
+                    
                   </div> 
               </div>
           </div>
@@ -359,7 +349,7 @@ ocupados por servidores efetivos..</p>
               <div class="panel-heading ">
                  <h5 class="card-header red2 shadow ">
                   <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp7">
-                  Efetivar a vedação à ocupação de cargos públicos por pessoas em inelegibilidade,
+                  Efetivar a vedação à ocupação de cargos públicos por pessoas em inelegibilidade
                   </a>
                  </h5> 
               </div> 
@@ -368,8 +358,10 @@ ocupados por servidores efetivos..</p>
                   <div class="card-body shadow"> 
                     <p> <span class="text-muted"> COMPROMISSO 7: </span>
                     Efetivar a vedação à ocupação de cargos, funções e empregos públicos por pessoas que se encontrem em situação de inelegibilidade, conforme art. 19º, § 8º, da Lei Orgânica do Distrito Federal, com publicação de relatórios periódicos sobre casos de descumprimento da exigência legal.</p>
+
                     <button class="btn btn-outline-info"> Detalhes </button>
-                    <button class=" btn btn-outline-info"> Saiba mais </button>
+                    
+         
                   </div> 
               </div>
           </div>
@@ -387,19 +379,19 @@ ocupados por servidores efetivos..</p>
           <!-- Start Panel 8-->
           <div class="card shadow">
               <div class="panel-heading ">
-                 <h5 class="card-header red2 shadow ">
-                  <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp7">
-                  Efetivar a vedação à ocupação de cargos públicos por pessoas em inelegibilidade,
+                 <h5 class="card-header bg-dark shadow ">
+                  <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp8">
+                  Promover processo seletivo público para escolha do Conselheiro do Tribunal de Contas do Distrito Federal
                   </a>
                  </h5> 
               </div> 
 
-              <div id="cp7" class="card-collapse collapse">
+              <div id="cp8" class="card-collapse collapse">
                   <div class="card-body shadow"> 
-                    <p> <span class="text-muted"> COMPROMISSO 7: </span>
-                    Efetivar a vedação à ocupação de cargos, funções e empregos públicos por pessoas que se encontrem em situação de inelegibilidade, conforme art. 19º, § 8º, da Lei Orgânica do Distrito Federal, com publicação de relatórios periódicos sobre casos de descumprimento da exigência legal.</p>
+                    <p> <span class="text-muted"> COMPROMISSO 8: </span>
+                    Em caso de abertura de vaga no Tribunal de Contas do Distrito Federal cuja indicação caiba ao Governador livremente, promover processo seletivo público para escolha do Conselheiro, aberto à participação de qualquer cidadão que reúna os requisitos legais para investidura no cargo.</p>
                     <button class="btn btn-outline-info"> Detalhes </button>
-                    <button class=" btn btn-outline-info"> Saiba mais </button>
+                  
                   </div> 
               </div>
           </div>
@@ -408,19 +400,19 @@ ocupados por servidores efetivos..</p>
           <!-- Start Panel 9-->
           <div class="card shadow mt-2">
               <div class="panel-heading ">
-                 <h5 class="card-header red2 shadow ">
-                  <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp7">
-                  Efetivar a vedação à ocupação de cargos públicos por pessoas em inelegibilidade,
+                 <h5 class="card-header verde2 shadow ">
+                  <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp9">
+                  Nomear para o cargo de Controlador-Geral do Distrito Federal pessoa sem filiação e com experiência
                   </a>
                  </h5> 
               </div> 
 
-              <div id="cp7" class="card-collapse collapse">
+              <div id="cp9" class="card-collapse collapse">
                   <div class="card-body shadow"> 
-                    <p> <span class="text-muted"> COMPROMISSO 7: </span>
-                    Efetivar a vedação à ocupação de cargos, funções e empregos públicos por pessoas que se encontrem em situação de inelegibilidade, conforme art. 19º, § 8º, da Lei Orgânica do Distrito Federal, com publicação de relatórios periódicos sobre casos de descumprimento da exigência legal.</p>
+                    <p> <span class="text-muted"> COMPROMISSO 9: </span>
+                    Nomear para o cargo de Controlador-Geral do Distrito Federal pessoa sem filiação partidária e com experiência comprovada nas áreas de controle interno, externo e/ou social.</p>
                     <button class="btn btn-outline-info"> Detalhes </button>
-                    <button class=" btn btn-outline-info"> Saiba mais </button>
+                   
                   </div> 
               </div>
           </div>
@@ -429,21 +421,23 @@ ocupados por servidores efetivos..</p>
           <!-- Start Panel 10-->
           <div class="card shadow mt-2">
               <div class="panel-heading ">
-                 <h5 class="card-header red2 shadow ">
-                  <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp7">
-                  Efetivar a vedação à ocupação de cargos públicos por pessoas em inelegibilidade,
+                 <h5 class="card-header bg-warning shadow ">
+                  <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp10">
+                  Regulamentar o Código de Defesa do Usuário do Serviço Público
                   </a>
                  </h5> 
               </div> 
 
-              <div id="cp7" class="card-collapse collapse">
+              <div id="cp10" class="card-collapse collapse">
                   <div class="card-body shadow"> 
-                    <p> <span class="text-muted"> COMPROMISSO 7: </span>
-                    Efetivar a vedação à ocupação de cargos, funções e empregos públicos por pessoas que se encontrem em situação de inelegibilidade, conforme art. 19º, § 8º, da Lei Orgânica do Distrito Federal, com publicação de relatórios periódicos sobre casos de descumprimento da exigência legal.</p>
+                    <p> <span class="text-muted"> COMPROMISSO 10: </span>
+                    Regulamentar, no Distrito Federal, a aplicação do Código de Defesa do Usuário do Serviço Público, instituído pela Lei federal nº 13.460/2017.</p>
                     <button class="btn btn-outline-info"> Detalhes </button>
-                    <button class=" btn btn-outline-info"> Saiba mais </button>
+                  
                   </div> 
               </div>
+
+
           </div>
           <!-- End Panel 10 -->
 
@@ -451,18 +445,18 @@ ocupados por servidores efetivos..</p>
           <div class="card shadow mt-2">
               <div class="panel-heading ">
                  <h5 class="card-header red2 shadow ">
-                  <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp7">
-                  Efetivar a vedação à ocupação de cargos públicos por pessoas em inelegibilidade,
+                  <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp11">
+                  Instituir o Índice de Qualidade do Atendimento no Serviço Público
                   </a>
                  </h5> 
               </div> 
 
-              <div id="cp7" class="card-collapse collapse">
+              <div id="cp11" class="card-collapse collapse">
                   <div class="card-body shadow"> 
-                    <p> <span class="text-muted"> COMPROMISSO 7: </span>
-                    Efetivar a vedação à ocupação de cargos, funções e empregos públicos por pessoas que se encontrem em situação de inelegibilidade, conforme art. 19º, § 8º, da Lei Orgânica do Distrito Federal, com publicação de relatórios periódicos sobre casos de descumprimento da exigência legal.</p>
+                    <p> <span class="text-muted"> COMPROMISSO 11: </span>
+                    Desenvolver e implementar, com a participação da sociedade civil, Índice de Qualidade do Atendimento no Serviço Público</p>
                     <button class="btn btn-outline-info"> Detalhes </button>
-                    <button class=" btn btn-outline-info"> Saiba mais </button>
+                   
                   </div> 
               </div>
           </div>
@@ -471,19 +465,19 @@ ocupados por servidores efetivos..</p>
           <!-- Start Panel 12-->
           <div class="card shadow mt-2">
               <div class="panel-heading ">
-                 <h5 class="card-header red2 shadow ">
-                  <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp7">
-                  Efetivar a vedação à ocupação de cargos públicos por pessoas em inelegibilidade,
+                 <h5 class="card-header verde2 shadow ">
+                  <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp12">
+                  Instituir programa de integridade sobre a política de boa governança da administração pública distrital 
                   </a>
                  </h5> 
               </div> 
 
-              <div id="cp7" class="card-collapse collapse">
+              <div id="cp12" class="card-collapse collapse">
                   <div class="card-body shadow"> 
-                    <p> <span class="text-muted"> COMPROMISSO 7: </span>
-                    Efetivar a vedação à ocupação de cargos, funções e empregos públicos por pessoas que se encontrem em situação de inelegibilidade, conforme art. 19º, § 8º, da Lei Orgânica do Distrito Federal, com publicação de relatórios periódicos sobre casos de descumprimento da exigência legal.</p>
-                    <button class="btn btn-outline-info"> Detalhes </button>
-                    <button class=" btn btn-outline-info"> Saiba mais </button>
+                    <p> <span class="text-muted"> COMPROMISSO 12: </span>
+                    Instituir programa de integridade que disponha sobre a política de boa governança da administração pública distrital direta, autárquica e fundacional, similar ao programa federal instituído pelo Decreto nº 9.203/2017.</p>
+                    <button class="btn btn-outline-info" data-toggle="modal" data-target="#modalcp1"> Detalhes </button>
+                   
                   </div> 
               </div>
           </div>
@@ -492,19 +486,19 @@ ocupados por servidores efetivos..</p>
           <!-- Start Panel 13-->
           <div class="card shadow mt-2">
               <div class="panel-heading ">
-                 <h5 class="card-header red2 shadow ">
-                  <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp7">
-                  Efetivar a vedação à ocupação de cargos públicos por pessoas em inelegibilidade,
+                 <h5 class="card-header verde2 shadow ">
+                  <a class="accordion-toggle text-white" data-toggle="collapse" data-parent="#accordion" href="#cp13">
+                  Garantir o funcionamento e a eficácia do Conselho de Transparência e Controle Social
                   </a>
                  </h5> 
               </div> 
 
-              <div id="cp7" class="card-collapse collapse">
+              <div id="cp13" class="card-collapse collapse">
                   <div class="card-body shadow"> 
-                    <p> <span class="text-muted"> COMPROMISSO 7: </span>
-                    Efetivar a vedação à ocupação de cargos, funções e empregos públicos por pessoas que se encontrem em situação de inelegibilidade, conforme art. 19º, § 8º, da Lei Orgânica do Distrito Federal, com publicação de relatórios periódicos sobre casos de descumprimento da exigência legal.</p>
+                    <p> <span class="text-muted"> COMPROMISSO 13: </span>
+                     Manter em funcionamento o Conselho de Transparência e Controle Social e exigir que os órgãos e entidades do Poder Executivo respondam dentro do prazo legal previsto no Decreto nº 36.307/2015 (com as alterações do Decreto nº 38.844/2018) os Requerimentos encaminhados. </p>
                     <button class="btn btn-outline-info"> Detalhes </button>
-                    <button class=" btn btn-outline-info"> Saiba mais </button>
+                    
                   </div> 
               </div>
           </div>
@@ -519,6 +513,42 @@ ocupados por servidores efetivos..</p>
 
       </div>                    
     </div>
+
+    <!-- Detalhes dos Compromissos -->
+    
+    <div>
+      
+        <div class="modal fade" id="modalcp1" tabindex="1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-info bg-mutted">
+                <h2 class="modal-title display-5 "> Página única na internet com todas as processos de compra do GDF  </h2>
+                <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <p>Os órgãos e entidades da administração direta e indireta do Distrito Federal utilizam pelo menos três plataformas diferentes para realizar suas licitações: e-Compras (www.compras.df.gov.br/publico), Comprasnet (www.comprasgovernamentais.gov.br) e licitações-e (www.licitacoes-e.com.br). A inexistência de um portal único, com dados abertos, que reúna todos os atos e informações dos processos licitatórios inibe o interesse de mais participantes e dificulta a fiscalização por parte da população, em decorrência da dificuldade de localizar e analisar editais, termos de referência, propostas e outros documentos. 
+
+                <p>Assim, o Compromisso 1 estimula a maior concorrência e a facilitação do controle social das licitações e contratos públicos, com ganhos concretos para a administração pública. Em resposta a pedido de informação feito pelo Observatório Social de Brasília, sob o número 00040.000285/2019-21, a Secretaria de Fazenda, Planejamento, Orçamento e Gestão informou que o desenvolvimento do novo Sistema de Compras Governamentais do Distrito Federal (e-ComprasDF) tem conclusão prevista para o segundo semestre deste ano. </p>
+
+                <p> A própria Secretaria afirma, na resposta, que “a implantação do Portal de Compras do Distrito Federal permitirá maior governança dos processos de aquisição bem como a ampliação do controle, da transparência e da participação da sociedade no Ciclo de Compras Públicas do GDF, bem como o registro de Dispensas de Licitação, Tomadas de Preços, Adesões à atas externas, entre outras formas de aquisição que serão publicizados no Portal, ampliando, assim a transparência dos processos de aquisição do GDF”.</p> 
+                <p class="text-center">
+                  <a href="https://drive.google.com/open?id=1eS5SI04Pt2tRAQ7HS45YYshRkGx6D-q0" target="_blank" class="btn btn-outline-success text-success "> Relatório Completo</a>
+                </p>
+
+                                  
+              </div>
+            
+            </div>
+
+          </div>
+
+
+        </div>
+    </div>
+
 
   </div> <!-- fim dos Compromissos Específicos -->
 
@@ -577,8 +607,8 @@ ocupados por servidores efetivos..</p>
   <div><!-- Realização -->
     <div class="mb-5 container" > 
       
-      <h1 class="display-5 titulo">  Realização </h1>
-      <p class="tmont mb-5"> Conehça a equipe de voluntários que realizou essa avaliação</p> 
+      <h1 class="display-5 titulo" id="realizacao">  Realização </h1>
+      <p class="tmont mb-5"> Conheça a equipe de voluntários que realizou essa avaliação</p> 
  
 
         <div class="text-center">
@@ -587,6 +617,29 @@ ocupados por servidores efetivos..</p>
 
           <h3 > Flávia Lemos</h3>
           <p> Voluntária Observatório Social de Brasília</p>        
+
+          <h3> Gilberto Gomes </h3>
+          <p> Voluntária Observatório Social de Brasília</p>       
+
+          <h3> Welder </h3>
+          <p> Voluntária Observatório Social de Brasília</p>
+
+          <h3 > Guilherme Brandão </h3>
+          <p> Diretor Observatório Social de Brasília</p>       
+
+
+          <div class="justify-content-around pt-5">
+            
+            <a class="btn btn-success btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSdo0pqlbWoztzZA1ImJPqTDHXoeUG-41A2Nis0vYTaNRlQdGQ/viewform#responses" target="_blank" role="button"> 
+            Quero ajudar! </a>
+
+            <button class=" btn btn-outline-success btn-lg" role="button" href="#topo">
+              Voltar ao topo 
+            </button>
+
+        
+
+          </div>
 
         </div>   
       			
@@ -613,32 +666,18 @@ ocupados por servidores efetivos..</p>
 
   </body>
 
-  <footer class="bg-dark">
-    <section class="container">
-      <div class="row pt-3">
-        <div class="col">
-          <h3 class="text-light">  </h3>
-          <p>
-           
-          </p>
+  <footer class="bg-dark pb-3">
+    <div class="container justify-content-center text-center">
+      <div class="row pt-3 justify-content-center ">
+
+             
+          <a href="https://osbrasilia.org/" class=""> <img src="img/logo.png" style="width: 350px;"></a>
+
+          
+          
         </div>
-
-        <div class="col">
-          <button href="#topo" class="btn btn-outline-warning btn-lg text-light"> Voltar ao topo </button>   
-
-          <button href="" class="btn btn-outline-warning btn-lg text-light"> Acessar o site oficial ! </button>   
-        </div>
-
-        
-
-      </div>
-      <div class="pt-3"> 
-
-      </div>
-      
-
-
-    
+    </div>
+             
 
   </footer>
 
